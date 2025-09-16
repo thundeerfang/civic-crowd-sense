@@ -8,6 +8,7 @@ import ComplaintsPage from './components/ComplaintsPage';
 import DepartmentsPage from './components/DepartmentsPage';
 import AboutPage from './components/AboutPage';
 import LoadingScreen from './components/LoadingScreen';
+import LoadingSpinner from './components/LoadingSpinner';
 import ProfileDropdown from './components/ProfileDropdown';
 import { User, Globe, Building2, Info } from 'lucide-react';
 
@@ -327,7 +328,7 @@ function App() {
         <header className="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center shadow-md">
                 <Building2 className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -339,7 +340,7 @@ function App() {
             <div className="flex items-center space-x-4">
               <button
                 onClick={toggleLanguage}
-                className="flex items-center space-x-2 px-3 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-xl hover:bg-gray-200 transition-all duration-200"
               >
                 <Globe className="w-4 h-4" />
                 <span>{t.switchLanguage}</span>
